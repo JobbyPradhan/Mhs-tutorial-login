@@ -35,9 +35,7 @@
             android:layout_height="wrap_content"
             android:hint="Enter Phone Number"
             android:maxLength="11"
-            android:maxLines="1"
             android:nextFocusDown="@id/et_password"
-            android:imeOptions="actionDone"
             android:inputType="phone"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -58,7 +56,6 @@
             android:layout_height="wrap_content"
             android:hint="Enter Password"
             android:nextFocusDown="@id/btn_login"
-            android:imeOptions="actionDone"
             android:inputType="textPassword"
             android:importantForAutofill="no" />
     </com.google.android.material.textfield.TextInputLayout>
