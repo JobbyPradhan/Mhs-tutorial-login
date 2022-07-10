@@ -1,0 +1,14 @@
+package com.mhs.mhs_tutorial_login.util
+
+import com.mhs.mhs_tutorial_login.model.Student
+
+object TempData {
+
+    val studentList : ArrayList<Student> = arrayListOf(
+        Student(1,"James","James is a colleague student.","https://images.unsplash.com/photo-1657378334461-693d6160e38a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"),
+        Student(2,"Mg Mg","Mg Mg is a university student.","https://images.unsplash.com/photo-1567168539593-59673ababaae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8c3R1ZGVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"),
+        Student(3,"Ma La","Ma La is a colleague student.","https://images.unsplash.com/photo-1599687351724-dfa3c4ff81b1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHN0dWRlbnR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"),
+        Student(4,"Ma May","Ma May is a Grade-9 student.","https://images.unsplash.com/photo-1629872430082-93d8912beccf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3R1ZGVudHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60")
+    )
+
+}
