@@ -9,9 +9,10 @@
     <ImageView
         android:id="@+id/img_profile"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="350dp"
         android:contentDescription="@string/app_name"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
         android:src="@drawable/reg"
         app:layout_constraintTop_toTopOf="parent" />
 
