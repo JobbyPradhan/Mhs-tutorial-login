@@ -1,5 +1,6 @@
 package com.mhs.mhs_tutorial_login.card.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -7,6 +8,7 @@ import coil.load
 import coil.transform.CircleCropTransformation
 import com.mhs.mhs_tutorial_login.R
 import com.mhs.mhs_tutorial_login.databinding.ItemListBinding
+import com.mhs.mhs_tutorial_login.detail.DetailActivity
 import com.mhs.mhs_tutorial_login.model.Student
 
 class StudentAdapter(
@@ -22,6 +24,13 @@ class StudentAdapter(
                 crossfade(true)
                 placeholder(R.drawable.reg)
                 transformations(CircleCropTransformation())
+            }
+            binding.root.setOnClickListener {
+                val intent = Intent(itemView.context,DetailActivity::class.java)
+                intent.putExtra("name",student.name)
+                intent.putExtra("desc",student.desc)
+                intent.putExtra("img",student.profile)
+                itemView.context.startActivity(intent)
             }
         }
 
